@@ -26,6 +26,9 @@ pipeline {
 
     stage('Deploy') {
       steps {
+           steps {
+            echo 'teer'
+          }
         input(message: 'deploy?', ok: 'deploy')
         echo "deploy version ${params.VERSION}"
       }
