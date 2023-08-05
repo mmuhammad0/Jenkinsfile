@@ -6,7 +6,9 @@ pipeline {
   }
   stages {
     stage('Build') {
-  
+      steps {
+        echo 'nafnna'
+      }
     }
 
     stage('Test') {
@@ -17,7 +19,7 @@ pipeline {
      }
         stage("Test1") {
           steps {
-            echo 'teer'
+            echo 'tee'
           }
         }
 
@@ -26,9 +28,6 @@ pipeline {
 
     stage('Deploy') {
       steps {
-           steps {
-            echo 'teeur'
-          }
         input(message: 'deploy?', ok: 'deploy')
         echo "deploy version ${params.VERSION}"
       }
