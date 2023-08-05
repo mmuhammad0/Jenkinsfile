@@ -31,7 +31,6 @@ pipeline {
       }
     }
 
-    #sdfghjkkjhgfds
   }
 }
 
