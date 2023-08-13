@@ -9,7 +9,7 @@ pipeline {
   stages {
     stage("Build") {
       steps {
-        echo 'nafnna'
+        echo 'nafna'
       }
     }
 
